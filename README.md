@@ -1,39 +1,29 @@
-**Welcome to your Base44 project** 
+# TitikTertib
 
-**About**
+TitikTertib adalah aplikasi web pelaporan dan pemetaan parkir liar berbasis React, Vite, Tailwind CSS, dan Base44.
 
-View and Edit  your app on [Base44.com](http://Base44.com) 
+## Fitur
 
-This project contains everything you need to run your app locally.
+- Login dan register pengguna
+- Pelaporan lokasi parkir liar
+- Pemetaan laporan berbasis map
+- Detail laporan
+- Heatmap titik laporan
+- Dashboard admin
+- Verifikasi dan analisis laporan
 
-**Edit the code in your local development environment**
+## Teknologi
 
-Any change pushed to the repo will also be reflected in the Base44 Builder.
+- React
+- Vite
+- Tailwind CSS
+- Base44
+- React Router
+- TanStack Query
 
-**Prerequisites:** 
+## Cara Menjalankan Project
 
-1. Clone the repository using the project's Git URL 
-2. Navigate to the project directory
-3. Install dependencies: `npm install`
-4. Create an `.env.local` file and set the right environment variables
+1. Clone repository ini:
 
-```
-VITE_BASE44_APP_ID=your_app_id
-VITE_BASE44_APP_BASE_URL=your_backend_url
-
-e.g.
-VITE_BASE44_APP_ID=cbef744a8545c389ef439ea6
-VITE_BASE44_APP_BASE_URL=https://my-to-do-list-81bfaad7.base44.app
-```
-
-Run the app: `npm run dev`
-
-**Publish your changes**
-
-Open [Base44.com](http://Base44.com) and click on Publish.
-
-**Docs & Support**
-
-Documentation: [https://docs.base44.com/Integrations/Using-GitHub](https://docs.base44.com/Integrations/Using-GitHub)
-
-Support: [https://app.base44.com/support](https://app.base44.com/support)
+   ```bash
+   git clone https://github.com/aqilanaufal2310-dot/TitikTertib.git

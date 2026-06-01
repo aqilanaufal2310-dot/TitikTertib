@@ -23,7 +23,56 @@ TitikTertib adalah aplikasi web pelaporan dan pemetaan parkir liar berbasis Reac
 
 ## Cara Menjalankan Project
 
+## Cara Menjalankan Project
+
 1. Clone repository ini:
 
    ```bash
    git clone https://github.com/aqilanaufal2310-dot/TitikTertib.git
+   ```
+
+2. Masuk ke folder project:
+
+   ```bash
+   cd TitikTertib
+   ```
+
+3. Install dependency:
+
+   ```bash
+   npm install
+   ```
+
+4. Buat file `.env.local` dari `.env.example`.
+
+   Di Windows PowerShell:
+
+   ```bash
+   copy .env.example .env.local
+   ```
+
+5. Jalankan project:
+
+   ```bash
+   npm run dev
+   ```
+
+   Jika PowerShell memblokir npm, gunakan:
+
+   ```bash
+   npm.cmd run dev
+   ```
+
+6. Setelah server berjalan, buka browser dan akses:
+
+   ```txt
+   http://localhost:5173
+   ```
+
+   Jika port 5173 tidak terbuka, coba:
+
+   ```txt
+   http://localhost:5174
+   ```
+
+Catatan: Project ini menggunakan konfigurasi Vite dengan log minimal, sehingga link localhost mungkin tidak muncul di terminal. Buka `http://localhost:5173` secara manual di browser.

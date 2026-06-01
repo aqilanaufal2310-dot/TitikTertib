@@ -23,19 +23,15 @@ TitikTertib adalah aplikasi web pelaporan dan pemetaan parkir liar berbasis Reac
 
 ## Cara Menjalankan Project
 
-## Cara Menjalankan Project
-
-1. Clone repository ini:
+1. Clone atau download repository ini dari GitHub:
 
    ```bash
    git clone https://github.com/aqilanaufal2310-dot/TitikTertib.git
    ```
 
-2. Masuk ke folder project:
+2. Buka folder `TitikTertib` di VS Code.
 
-   ```bash
-   cd TitikTertib
-   ```
+   Pastikan terminal VS Code berada di dalam folder project yang berisi file `package.json`.
 
 3. Install dependency:
 
@@ -43,13 +39,26 @@ TitikTertib adalah aplikasi web pelaporan dan pemetaan parkir liar berbasis Reac
    npm install
    ```
 
-4. Buat file `.env.local` dari `.env.example`.
+   Jika PowerShell memblokir `npm`, gunakan:
 
-   Di Windows PowerShell:
+   ```bash
+   npm.cmd install
+   ```
+
+4. Buat file `.env.local`.
+
+   Project ini sudah menyediakan file `.env.example` sebagai contoh konfigurasi. Agar aplikasi bisa berjalan lokal, copy isi `.env.example` ke file baru bernama `.env.local`.
+
+   Cara cepat lewat terminal Windows PowerShell:
 
    ```bash
    copy .env.example .env.local
    ```
+
+   Atau bisa dibuat manual di VS Code:
+   - klik kanan file `.env.example`
+   - copy/duplicate file tersebut
+   - ubah nama hasil copy menjadi `.env.local`
 
 5. Jalankan project:
 
@@ -57,7 +66,7 @@ TitikTertib adalah aplikasi web pelaporan dan pemetaan parkir liar berbasis Reac
    npm run dev
    ```
 
-   Jika PowerShell memblokir npm, gunakan:
+   Jika PowerShell memblokir `npm`, gunakan:
 
    ```bash
    npm.cmd run dev
@@ -76,3 +85,18 @@ TitikTertib adalah aplikasi web pelaporan dan pemetaan parkir liar berbasis Reac
    ```
 
 Catatan: Project ini menggunakan konfigurasi Vite dengan log minimal, sehingga link localhost mungkin tidak muncul di terminal. Buka `http://localhost:5173` secara manual di browser.
+
+## Environment Variables
+
+Project ini membutuhkan environment variable berikut:
+
+```env
+VITE_BASE44_APP_BASE_URL=https://titik-tertib-map.base44.app
+VITE_BASE44_APP_ID=6a0a3c335a12f1de85be043a
+```
+
+Nilai tersebut sudah tersedia di `.env.example`. File `.env.local` dibuat dari `.env.example` agar aplikasi lokal dapat terhubung ke Base44.
+
+## Catatan
+
+File `.env.local` tidak perlu diupload ke GitHub karena hanya digunakan untuk konfigurasi lokal di komputer masing-masing.

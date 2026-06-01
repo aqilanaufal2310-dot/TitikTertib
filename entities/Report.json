@@ -1,0 +1,59 @@
+{
+  "name": "Report",
+  "type": "object",
+  "properties": {
+    "latitude": {
+      "type": "number",
+      "description": "Latitude koordinat lokasi parkir liar"
+    },
+    "longitude": {
+      "type": "number",
+      "description": "Longitude koordinat lokasi parkir liar"
+    },
+    "address": {
+      "type": "string",
+      "description": "Alamat lokasi parkir liar"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "URL foto bukti pelanggaran"
+    },
+    "description": {
+      "type": "string",
+      "description": "Deskripsi laporan"
+    },
+    "vehicle_type": {
+      "type": "string",
+      "enum": [
+        "mobil",
+        "motor",
+        "lainnya"
+      ],
+      "description": "Jenis kendaraan yang parkir liar"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "menunggu",
+        "disetujui",
+        "ditolak"
+      ],
+      "default": "menunggu",
+      "description": "Status verifikasi laporan"
+    },
+    "reporter_name": {
+      "type": "string",
+      "description": "Nama pelapor"
+    },
+    "report_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Waktu kejadian parkir liar"
+    }
+  },
+  "required": [
+    "latitude",
+    "longitude",
+    "vehicle_type"
+  ]
+}

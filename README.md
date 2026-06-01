@@ -85,18 +85,3 @@ TitikTertib adalah aplikasi web pelaporan dan pemetaan parkir liar berbasis Reac
    ```
 
 Catatan: Project ini menggunakan konfigurasi Vite dengan log minimal, sehingga link localhost mungkin tidak muncul di terminal. Buka `http://localhost:5173` secara manual di browser.
-
-## Environment Variables
-
-Project ini membutuhkan environment variable berikut:
-
-```env
-VITE_BASE44_APP_BASE_URL=https://titik-tertib-map.base44.app
-VITE_BASE44_APP_ID=6a0a3c335a12f1de85be043a
-```
-
-Nilai tersebut sudah tersedia di `.env.example`. File `.env.local` dibuat dari `.env.example` agar aplikasi lokal dapat terhubung ke Base44.
-
-## Catatan
-
-File `.env.local` tidak perlu diupload ke GitHub karena hanya digunakan untuk konfigurasi lokal di komputer masing-masing.
